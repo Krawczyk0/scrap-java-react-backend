@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("http://localhost:5173") // Domena, z której zezwalamy na żądania
+                        .allowedOriginPatterns("https://scrap-java-react-front.vercel.app/login") // Domena, z której zezwalamy na żądania
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Dozwolone metody
                         .allowedHeaders("*") // Dozwolone nagłówki
                         .allowCredentials(true); // Zezwalaj na ciasteczka/autoryzację
